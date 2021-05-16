@@ -1081,4 +1081,99 @@ Wire Wire Line
 	5350 3000 5650 3000
 Wire Wire Line
 	6350 1050 6350 1150
+Wire Wire Line
+	2850 3900 3050 3900
+Text Label 3050 3900 2    50   ~ 0
+P1.1
+$Comp
+L Device:R_Small R?
+U 1 1 60B6EE8A
+P 2400 3900
+F 0 "R?" V 2204 3900 50  0000 C CNN
+F 1 "1k" V 2295 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B79ACF
+P 2400 4200
+F 0 "R?" V 2204 4200 50  0000 C CNN
+F 1 "22k" V 2295 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 4200 50  0001 C CNN
+F 3 "~" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B79F43
+P 2200 3900
+F 0 "#PWR?" H 2200 3650 50  0001 C CNN
+F 1 "GND" H 2205 3727 50  0000 C CNN
+F 2 "" H 2200 3900 50  0001 C CNN
+F 3 "" H 2200 3900 50  0001 C CNN
+	1    2200 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 60B7AAA5
+P 2200 4200
+F 0 "#PWR?" H 2200 4050 50  0001 C CNN
+F 1 "VBUS" H 2215 4373 50  0000 C CNN
+F 2 "" H 2200 4200 50  0001 C CNN
+F 3 "" H 2200 4200 50  0001 C CNN
+	1    2200 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 4200 2250 4200
+Wire Wire Line
+	2300 3900 2200 3900
+Wire Wire Line
+	2850 4200 2850 3900
+Connection ~ 2850 3900
+Text Notes 700  4350 0    50   ~ 0
+Options for measuring VBUS:\n1. Use 2.2k and 10k, measure\n  relative to VCC.\n2. Use external divider for P3.2\n  and use 1k and 2*22k here.\n  Measure relative to P3.2.
+$Comp
+L Device:R_Small R?
+U 1 1 60BB508E
+P 2700 4200
+F 0 "R?" V 2504 4200 50  0000 C CNN
+F 1 "22k" V 2595 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2700 4200 50  0001 C CNN
+F 3 "~" H 2700 4200 50  0001 C CNN
+	1    2700 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3900 2850 3900
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 60BC9416
+P 2400 4400
+F 0 "JP?" H 2400 4500 50  0000 C CNN
+F 1 "Jumper" H 2400 4573 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2400 4400 50  0001 C CNN
+F 3 "~" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4200 2850 4200
+Wire Wire Line
+	2550 4400 2550 4200
+Wire Wire Line
+	2550 4200 2500 4200
+Wire Wire Line
+	2550 4200 2600 4200
+Connection ~ 2550 4200
+Wire Wire Line
+	2250 4400 2250 4200
+Connection ~ 2250 4200
+Wire Wire Line
+	2250 4200 2300 4200
 $EndSCHEMATC
