@@ -639,17 +639,6 @@ F 3 "" H 800 1550 50  0001 C CNN
 	1    800  1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L CH552-USB-Devboard-rescue:USB_C_Receptacle-Connector J3
-U 1 1 5F0EEE62
-P 5650 2150
-F 0 "J3" H 5755 3717 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 5755 3626 50  0000 C CNN
-F 2 "footprint:VACON_CSP_USC16_TR" H 5800 2150 50  0001 C CNN
-F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 2150 50  0001 C CNN
-	1    5650 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 1850 6500 1850
 Wire Wire Line
@@ -669,68 +658,16 @@ Connection ~ 6500 1750
 Wire Wire Line
 	6500 1750 6950 1750
 Wire Wire Line
-	5350 3750 5350 4100
-Wire Wire Line
-	5350 4100 5450 4100
-Wire Wire Line
-	5750 3750 5750 4100
-Wire Wire Line
-	5650 3750 5650 4100
-Connection ~ 5650 4100
-Wire Wire Line
-	5650 4100 5750 4100
-Wire Wire Line
-	5550 3750 5550 4100
-Connection ~ 5550 4100
-Wire Wire Line
-	5550 4100 5650 4100
-Wire Wire Line
-	5450 3750 5450 4100
-Connection ~ 5450 4100
-Wire Wire Line
-	5450 4100 5550 4100
-Wire Wire Line
-	5750 4100 5750 4350
-Connection ~ 5750 4100
-$Comp
-L power:GND #PWR0103
-U 1 1 5F12C15E
-P 5750 4350
-F 0 "#PWR0103" H 5750 4100 50  0001 C CNN
-F 1 "GND" H 5755 4177 50  0000 C CNN
-F 2 "" H 5750 4350 50  0001 C CNN
-F 3 "" H 5750 4350 50  0001 C CNN
-	1    5750 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 850  6750 850 
-Wire Wire Line
-	6750 850  6750 700 
-Wire Wire Line
-	6250 1150 6750 1150
-Wire Wire Line
-	6750 1150 6750 1050
-Connection ~ 6750 850 
-Wire Wire Line
-	6250 1050 6750 1050
-Connection ~ 6750 1050
-Wire Wire Line
-	6750 1050 6750 950 
-Wire Wire Line
-	6250 950  6750 950 
-Connection ~ 6750 950 
-Wire Wire Line
-	6750 950  6750 850 
+	6250 1150 6350 1150
 $Comp
 L power:VBUS #PWR0104
 U 1 1 5F1419FC
-P 6750 700
-F 0 "#PWR0104" H 6750 550 50  0001 C CNN
-F 1 "VBUS" H 6765 873 50  0000 C CNN
-F 2 "" H 6750 700 50  0001 C CNN
-F 3 "" H 6750 700 50  0001 C CNN
-	1    6750 700 
+P 6350 1050
+F 0 "#PWR0104" H 6350 900 50  0001 C CNN
+F 1 "VBUS" H 6365 1223 50  0000 C CNN
+F 2 "" H 6350 1050 50  0001 C CNN
+F 3 "" H 6350 1050 50  0001 C CNN
+	1    6350 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -879,23 +816,17 @@ F 3 "~" H 8900 4100 50  0001 C CNN
 	1    8900 4100
 	1    0    0    -1  
 $EndComp
-Text Notes 1250 -650 0    50   ~ 0
-FIXME:\n- BOOTL switch needs 22k resistor\n- RST switch is quite useless (BOOTL needs POR, I think)\n- LDO is not necessary (integrated into the CH552)\n- add solder jumper to bridge Q1\n- add SOT-23 alternative for Q1\n- move crystal to top side?\n- C3 should be 100nF\n- C5/C6 should be *much* smaller, e.g. 12 pF
 $Comp
-L Device:Jumper JP1
+L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 60A07638
 P 8250 1850
 F 0 "JP1" H 8250 2114 50  0000 C CNN
-F 1 "Jumper" H 8250 2023 50  0000 C CNN
+F 1 "Jumper" H 8250 2023 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8250 1850 50  0001 C CNN
 F 3 "~" H 8250 1850 50  0001 C CNN
 	1    8250 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 1850 7500 1850
-Wire Wire Line
-	8550 1850 9000 1850
 Wire Wire Line
 	9100 2300 9100 2550
 Wire Wire Line
@@ -992,7 +923,7 @@ Wire Wire Line
 	1850 2550 1850 2600
 Wire Wire Line
 	2500 2450 2850 2450
-Text Label 2850 2450 2    50   ~ 0
+Text Label 3650 2700 2    50   ~ 0
 P3.3
 Text Label 800  2300 0    50   ~ 0
 P1.4
@@ -1015,4 +946,139 @@ Wire Wire Line
 	9100 4600 9700 4600
 Wire Wire Line
 	9100 4500 9700 4500
+Text Label 2850 2950 2    50   ~ 0
+P3.2
+$Comp
+L Device:R_Small R8
+U 1 1 60A0EBE8
+P 2400 2950
+F 0 "R8" V 2204 2950 50  0000 C CNN
+F 1 "1k" V 2295 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 2950 50  0001 C CNN
+F 3 "~" H 2400 2950 50  0001 C CNN
+	1    2400 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2950 2600 2950
+$Comp
+L Device:R_Small R9
+U 1 1 60A17F33
+P 2400 3250
+F 0 "R9" V 2204 3250 50  0000 C CNN
+F 1 "10k" V 2295 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 3250 50  0001 C CNN
+F 3 "~" H 2400 3250 50  0001 C CNN
+	1    2400 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3250 2600 3250
+Wire Wire Line
+	2600 3250 2600 2950
+Connection ~ 2600 2950
+Wire Wire Line
+	2600 2950 2500 2950
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 60A21FA3
+P 2200 3250
+F 0 "#PWR0113" H 2200 3100 50  0001 C CNN
+F 1 "+3V3" H 2215 3423 50  0000 C CNN
+F 2 "" H 2200 3250 50  0001 C CNN
+F 3 "" H 2200 3250 50  0001 C CNN
+	1    2200 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 3250 2300 3250
+$Comp
+L power:GND #PWR0115
+U 1 1 60A2BA53
+P 2200 2950
+F 0 "#PWR0115" H 2200 2700 50  0001 C CNN
+F 1 "GND" H 2205 2777 50  0000 C CNN
+F 2 "" H 2200 2950 50  0001 C CNN
+F 3 "" H 2200 2950 50  0001 C CNN
+	1    2200 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2950 2300 2950
+Text Notes 700  3600 0    50   ~ 0
+0.5V ref. voltage for ACMP\nOptions:\n1. Both resistors external\n2. Use 10k VBUS pulldown plus ext. PU\n3. Use int. PU plus ext. PD (high variation)\n4. Use int. PU and PD (high variation, 0.5V)
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 60A4E06D
+P 3200 2450
+F 0 "JP2" H 3200 2600 50  0000 C CNN
+F 1 "Jumper" H 3200 2623 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3200 2450 50  0001 C CNN
+F 3 "~" H 3200 2450 50  0001 C CNN
+	1    3200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 60A50BC6
+P 3200 2700
+F 0 "JP3" H 3200 2800 50  0000 C CNN
+F 1 "Jumper" H 3200 2873 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3200 2700 50  0001 C CNN
+F 3 "~" H 3200 2700 50  0001 C CNN
+	1    3200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1850 8100 1850
+Wire Wire Line
+	8400 1850 9000 1850
+Wire Wire Line
+	3650 2700 3350 2700
+Wire Wire Line
+	3050 2700 2850 2700
+Wire Wire Line
+	2850 2700 2850 2450
+Wire Wire Line
+	2850 2450 3050 2450
+Connection ~ 2850 2450
+Text Label 3650 2450 2    50   ~ 0
+P3.2
+Wire Wire Line
+	3650 2450 3350 2450
+Text Notes 2550 2250 0    50   ~ 0
+I think P3.2 can do double duty\nbecause we only need the reference\nduring RX and the diode should\nensure that CC1/2 doesn't influence\nthe reference (if Vf>0.5V).
+$Comp
+L power:GND #PWR0103
+U 1 1 5F12C15E
+P 5650 3250
+F 0 "#PWR0103" H 5650 3000 50  0001 C CNN
+F 1 "GND" H 5655 3077 50  0000 C CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 3000
+Wire Wire Line
+	5650 3000 5650 3250
+Wire Wire Line
+	5350 2650 5350 3000
+Wire Wire Line
+	5650 2650 5650 3000
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J3
+U 1 1 5F0EEE62
+P 5650 1750
+F 0 "J3" H 5755 3317 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 5755 3226 50  0000 C CNN
+F 2 "footprint:VACON_CSP_USC16_TR" H 5800 1750 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 1750 50  0001 C CNN
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3000 5650 3000
+Wire Wire Line
+	6350 1050 6350 1150
 $EndSCHEMATC
