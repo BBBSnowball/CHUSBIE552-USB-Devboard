@@ -415,9 +415,9 @@ Text Notes 9800 2100 2    50   ~ 0
 TX\n
 Text Notes 9750 900  2    50   ~ 0
 POW\n
-Text Label 6950 1850 2    50   ~ 0
+Text Label 6950 1550 2    50   ~ 0
 P3.6
-Text Label 6950 1750 2    50   ~ 0
+Text Label 6950 1450 2    50   ~ 0
 P3.7
 $Comp
 L Device:C_Small C3
@@ -640,34 +640,34 @@ F 3 "" H 800 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 1850 6500 1850
-Wire Wire Line
-	6250 1950 6500 1950
-Wire Wire Line
-	6500 1950 6500 1850
-Connection ~ 6500 1850
-Wire Wire Line
-	6500 1850 6950 1850
-Wire Wire Line
-	6250 1750 6500 1750
+	6250 1550 6500 1550
 Wire Wire Line
 	6250 1650 6500 1650
 Wire Wire Line
-	6500 1650 6500 1750
-Connection ~ 6500 1750
+	6500 1650 6500 1550
+Connection ~ 6500 1550
 Wire Wire Line
-	6500 1750 6950 1750
+	6500 1550 6950 1550
 Wire Wire Line
-	6250 1150 6350 1150
+	6250 1450 6500 1450
+Wire Wire Line
+	6250 1350 6500 1350
+Wire Wire Line
+	6500 1350 6500 1450
+Connection ~ 6500 1450
+Wire Wire Line
+	6500 1450 6950 1450
+Wire Wire Line
+	6250 850  6350 850 
 $Comp
 L power:VBUS #PWR0104
 U 1 1 5F1419FC
-P 6350 1050
-F 0 "#PWR0104" H 6350 900 50  0001 C CNN
-F 1 "VBUS" H 6365 1223 50  0000 C CNN
-F 2 "" H 6350 1050 50  0001 C CNN
-F 3 "" H 6350 1050 50  0001 C CNN
-	1    6350 1050
+P 6350 750
+F 0 "#PWR0104" H 6350 600 50  0001 C CNN
+F 1 "VBUS" H 6365 923 50  0000 C CNN
+F 2 "" H 6350 750 50  0001 C CNN
+F 3 "" H 6350 750 50  0001 C CNN
+	1    6350 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -741,12 +741,12 @@ F 3 "" H 8750 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 1350 6700 1350
+	6250 1050 6350 1050
 Wire Wire Line
-	6250 1450 6700 1450
-Text Label 6700 1350 0    50   ~ 0
+	6250 1150 6350 1150
+Text Label 6700 1050 0    50   ~ 0
 CC1
-Text Label 6700 1450 0    50   ~ 0
+Text Label 6700 1150 0    50   ~ 0
 CC2
 Wire Wire Line
 	9000 1850 9000 1750
@@ -1051,129 +1051,227 @@ I think P3.2 can do double duty\nbecause we only need the reference\nduring RX a
 $Comp
 L power:GND #PWR0103
 U 1 1 5F12C15E
-P 5650 3250
-F 0 "#PWR0103" H 5650 3000 50  0001 C CNN
-F 1 "GND" H 5655 3077 50  0000 C CNN
-F 2 "" H 5650 3250 50  0001 C CNN
-F 3 "" H 5650 3250 50  0001 C CNN
-	1    5650 3250
+P 5650 2450
+F 0 "#PWR0103" H 5650 2200 50  0001 C CNN
+F 1 "GND" H 5655 2277 50  0000 C CNN
+F 2 "" H 5650 2450 50  0001 C CNN
+F 3 "" H 5650 2450 50  0001 C CNN
+	1    5650 2450
 	1    0    0    -1  
 $EndComp
-Connection ~ 5650 3000
+Connection ~ 5650 2400
 Wire Wire Line
-	5650 3000 5650 3250
+	5650 2400 5650 2450
 Wire Wire Line
-	5350 2650 5350 3000
+	5350 2350 5350 2400
 Wire Wire Line
-	5650 2650 5650 3000
+	5650 2350 5650 2400
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 5F0EEE62
-P 5650 1750
-F 0 "J3" H 5755 3317 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 5755 3226 50  0000 C CNN
-F 2 "footprint:VACON_CSP_USC16_TR" H 5800 1750 50  0001 C CNN
-F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 1750 50  0001 C CNN
-	1    5650 1750
+P 5650 1450
+F 0 "J3" H 5650 2300 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 5650 2200 50  0000 C CNN
+F 2 "footprint:VACON_CSP_USC16_TR" H 5800 1450 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 1450 50  0001 C CNN
+	1    5650 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 3000 5650 3000
+	5350 2400 5650 2400
 Wire Wire Line
-	6350 1050 6350 1150
+	6350 750  6350 850 
 Wire Wire Line
-	2850 3900 3050 3900
-Text Label 3050 3900 2    50   ~ 0
+	3000 3800 3200 3800
+Text Label 3200 3800 2    50   ~ 0
 P1.1
 $Comp
-L Device:R_Small R?
+L Device:R_Small R10
 U 1 1 60B6EE8A
-P 2400 3900
-F 0 "R?" V 2204 3900 50  0000 C CNN
-F 1 "1k" V 2295 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 3900 50  0001 C CNN
-F 3 "~" H 2400 3900 50  0001 C CNN
-	1    2400 3900
+P 2550 3800
+F 0 "R10" V 2354 3800 50  0000 C CNN
+F 1 "1k" V 2445 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 3800 50  0001 C CNN
+F 3 "~" H 2550 3800 50  0001 C CNN
+	1    2550 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R11
 U 1 1 60B79ACF
-P 2400 4200
-F 0 "R?" V 2204 4200 50  0000 C CNN
-F 1 "22k" V 2295 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 4200 50  0001 C CNN
-F 3 "~" H 2400 4200 50  0001 C CNN
-	1    2400 4200
+P 2550 4100
+F 0 "R11" V 2354 4100 50  0000 C CNN
+F 1 "22k" V 2445 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 4100 50  0001 C CNN
+F 3 "~" H 2550 4100 50  0001 C CNN
+	1    2550 4100
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0119
 U 1 1 60B79F43
-P 2200 3900
-F 0 "#PWR?" H 2200 3650 50  0001 C CNN
-F 1 "GND" H 2205 3727 50  0000 C CNN
-F 2 "" H 2200 3900 50  0001 C CNN
-F 3 "" H 2200 3900 50  0001 C CNN
-	1    2200 3900
+P 2350 3800
+F 0 "#PWR0119" H 2350 3550 50  0001 C CNN
+F 1 "GND" H 2355 3627 50  0000 C CNN
+F 2 "" H 2350 3800 50  0001 C CNN
+F 3 "" H 2350 3800 50  0001 C CNN
+	1    2350 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VBUS #PWR?
+L power:VBUS #PWR0120
 U 1 1 60B7AAA5
-P 2200 4200
-F 0 "#PWR?" H 2200 4050 50  0001 C CNN
-F 1 "VBUS" H 2215 4373 50  0000 C CNN
-F 2 "" H 2200 4200 50  0001 C CNN
-F 3 "" H 2200 4200 50  0001 C CNN
-	1    2200 4200
+P 2100 4100
+F 0 "#PWR0120" H 2100 3950 50  0001 C CNN
+F 1 "VBUS" H 2115 4273 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2200 4200 2250 4200
+	2450 3800 2350 3800
 Wire Wire Line
-	2300 3900 2200 3900
-Wire Wire Line
-	2850 4200 2850 3900
-Connection ~ 2850 3900
-Text Notes 700  4350 0    50   ~ 0
+	3000 4100 3000 3800
+Connection ~ 3000 3800
+Text Notes 700  4150 0    50   ~ 0
 Options for measuring VBUS:\n1. Use 2.2k and 10k, measure\n  relative to VCC.\n2. Use external divider for P3.2\n  and use 1k and 2*22k here.\n  Measure relative to P3.2.
 $Comp
-L Device:R_Small R?
+L Device:R_Small R12
 U 1 1 60BB508E
-P 2700 4200
-F 0 "R?" V 2504 4200 50  0000 C CNN
-F 1 "22k" V 2595 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2700 4200 50  0001 C CNN
-F 3 "~" H 2700 4200 50  0001 C CNN
-	1    2700 4200
+P 2850 4100
+F 0 "R12" V 2654 4100 50  0000 C CNN
+F 1 "22k" V 2745 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2850 4100 50  0001 C CNN
+F 3 "~" H 2850 4100 50  0001 C CNN
+	1    2850 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2500 3900 2850 3900
+	2650 3800 3000 3800
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 60BC9416
-P 2400 4400
-F 0 "JP?" H 2400 4500 50  0000 C CNN
-F 1 "Jumper" H 2400 4573 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2400 4400 50  0001 C CNN
-F 3 "~" H 2400 4400 50  0001 C CNN
-	1    2400 4400
+P 2550 4300
+F 0 "JP4" H 2550 4400 50  0000 C CNN
+F 1 "Jumper" H 2550 4473 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+	1    2550 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 4200 2850 4200
+	2950 4100 3000 4100
 Wire Wire Line
-	2550 4400 2550 4200
+	2700 4300 2700 4100
 Wire Wire Line
-	2550 4200 2500 4200
+	2700 4100 2650 4100
 Wire Wire Line
-	2550 4200 2600 4200
-Connection ~ 2550 4200
+	2700 4100 2750 4100
+Connection ~ 2700 4100
 Wire Wire Line
-	2250 4400 2250 4200
-Connection ~ 2250 4200
+	2400 4100 2450 4100
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J4
+U 1 1 60C8CB0D
+P 5650 3550
+F 0 "J4" H 5650 4400 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 5650 4300 50  0000 C CNN
+F 2 "footprint:VACON_CSP_USC16_TR" H 5800 3550 50  0001 C CNN
+F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 3550 50  0001 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2250 4200 2300 4200
+	6250 3150 6700 3150
+Wire Wire Line
+	6250 3250 6700 3250
+Text Label 6700 3150 0    50   ~ 0
+CC1
+Text Label 6700 3250 0    50   ~ 0
+CC2
+$Comp
+L power:GND #PWR0126
+U 1 1 60CB070E
+P 5650 4450
+F 0 "#PWR0126" H 5650 4200 50  0001 C CNN
+F 1 "GND" H 5655 4277 50  0000 C CNN
+F 2 "" H 5650 4450 50  0001 C CNN
+F 3 "" H 5650 4450 50  0001 C CNN
+	1    5650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 60CB0F33
+P 5350 4450
+F 0 "#PWR0130" H 5350 4200 50  0001 C CNN
+F 1 "GND" H 5355 4277 50  0000 C CNN
+F 2 "" H 5350 4450 50  0001 C CNN
+F 3 "" H 5350 4450 50  0001 C CNN
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP5
+U 1 1 60CB722F
+P 6500 1050
+F 0 "JP5" H 6500 1150 50  0000 C CNN
+F 1 "Jumper" H 6500 1223 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6500 1050 50  0001 C CNN
+F 3 "~" H 6500 1050 50  0001 C CNN
+	1    6500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1050 6700 1050
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 60CB8661
+P 6500 1150
+F 0 "JP6" H 6500 1050 50  0000 C CNN
+F 1 "Jumper" H 6500 1323 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6500 1150 50  0001 C CNN
+F 3 "~" H 6500 1150 50  0001 C CNN
+	1    6500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1150 6700 1150
+Text Notes 6100 2850 0    50   ~ 0
+2nd USB is for PD monitor:\n- attach USB host to J3\n- cut CC and VBUS monitor jumper next to J3\n- close VBUS jumper next to J4
+Wire Wire Line
+	6250 2950 6700 2950
+Text Label 6700 2950 0    50   ~ 0
+VBUS2
+Text Label 2050 4300 2    50   ~ 0
+VBUS2
+$Comp
+L Jumper:SolderJumper_2_Bridged JP7
+U 1 1 60CF0C8C
+P 2250 4100
+F 0 "JP7" H 2250 4250 50  0000 C CNN
+F 1 "Jumper" H 2250 4273 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2250 4100 50  0001 C CNN
+F 3 "~" H 2250 4100 50  0001 C CNN
+	1    2250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 60CFA7A6
+P 2250 4300
+F 0 "JP8" H 2250 4400 50  0000 C CNN
+F 1 "Jumper" H 2250 4473 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2250 4300 50  0001 C CNN
+F 3 "~" H 2250 4300 50  0001 C CNN
+	1    2250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4300 2100 4300
+Wire Wire Line
+	2400 4300 2400 4100
+Connection ~ 2400 4300
+Connection ~ 2400 4100
 $EndSCHEMATC
