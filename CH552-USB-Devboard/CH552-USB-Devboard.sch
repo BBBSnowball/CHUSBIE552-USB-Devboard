@@ -18,9 +18,10 @@ L Device:R_Small R3
 U 1 1 5E91F991
 P 10500 1800
 F 0 "R3" V 10304 1800 50  0000 C CNN
-F 1 "1k" V 10395 1800 50  0000 C CNN
+F 1 "10k" V 10395 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10500 1800 50  0001 C CNN
 F 3 "~" H 10500 1800 50  0001 C CNN
+F 4 "C25804" V 10500 1800 50  0001 C CNN "LCSC"
 	1    10500 1800
 	0    1    1    0   
 $EndComp
@@ -32,6 +33,8 @@ F 0 "U1" H 3575 6165 50  0000 C CNN
 F 1 "CH552T" H 3575 6074 50  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm" H 4100 5200 50  0001 C CNN
 F 3 "" H 4100 5200 50  0001 C CNN
+F 4 "C111367" H 3800 5200 50  0001 C CNN "LCSC"
+F 5 "1" H 3800 5200 50  0001 C CNN "DNP"
 	1    3800 5200
 	1    0    0    -1  
 $EndComp
@@ -43,6 +46,7 @@ F 0 "U2" H 8525 6215 50  0000 C CNN
 F 1 "CH552G" H 8525 6124 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 8850 5500 50  0001 C CNN
 F 3 "" H 8850 5500 50  0001 C CNN
+F 4 "C111292" H 8550 5500 50  0001 C CNN "LCSC"
 	1    8550 5500
 	1    0    0    -1  
 $EndComp
@@ -54,6 +58,8 @@ F 0 "SW1" H 1500 2285 50  0000 C CNN
 F 1 "SW_Push" H 1500 2194 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 1500 2200 50  0001 C CNN
 F 3 "" H 1500 2200 50  0001 C CNN
+F 4 "C116501" H 1500 2000 50  0001 C CNN "LCSC"
+F 5 "PCBA" H 1500 2000 50  0001 C CNN "DNP"
 	1    1500 2000
 	1    0    0    -1  
 $EndComp
@@ -62,9 +68,10 @@ L Device:LED D1
 U 1 1 5E91FEF9
 P 10050 1800
 F 0 "D1" H 10041 2016 50  0000 C CNN
-F 1 "LED" H 10041 1925 50  0000 C CNN
+F 1 "LED, yellow" H 10041 1925 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 10050 1800 50  0001 C CNN
 F 3 "~" H 10050 1800 50  0001 C CNN
+F 4 "C2296" H 10050 1800 50  0001 C CNN "LCSC"
 	1    10050 1800
 	-1   0    0    1   
 $EndComp
@@ -77,9 +84,10 @@ L Device:R_Small R4
 U 1 1 5E9203E3
 P 10500 2150
 F 0 "R4" V 10304 2150 50  0000 C CNN
-F 1 "1k" V 10395 2150 50  0000 C CNN
+F 1 "10k" V 10395 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10500 2150 50  0001 C CNN
 F 3 "~" H 10500 2150 50  0001 C CNN
+F 4 "C25804" V 10500 2150 50  0001 C CNN "LCSC"
 	1    10500 2150
 	0    1    1    0   
 $EndComp
@@ -88,9 +96,10 @@ L Device:LED D2
 U 1 1 5E9203EA
 P 10050 2150
 F 0 "D2" H 10041 2366 50  0000 C CNN
-F 1 "LED" H 10041 2275 50  0000 C CNN
+F 1 "LED, yellow" H 10041 2275 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 10050 2150 50  0001 C CNN
 F 3 "~" H 10050 2150 50  0001 C CNN
+F 4 "C2296" H 10050 2150 50  0001 C CNN "LCSC"
 	1    10050 2150
 	-1   0    0    1   
 $EndComp
@@ -101,9 +110,10 @@ L Device:R_Small R5
 U 1 1 5E920474
 P 10450 950
 F 0 "R5" V 10254 950 50  0000 C CNN
-F 1 "1k" V 10345 950 50  0000 C CNN
+F 1 "10k" V 10345 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10450 950 50  0001 C CNN
 F 3 "~" H 10450 950 50  0001 C CNN
+F 4 "C25804" V 10450 950 50  0001 C CNN "LCSC"
 	1    10450 950 
 	0    1    1    0   
 $EndComp
@@ -112,9 +122,10 @@ L Device:LED D3
 U 1 1 5E92047B
 P 10000 950
 F 0 "D3" H 9991 1166 50  0000 C CNN
-F 1 "LED" H 9991 1075 50  0000 C CNN
+F 1 "LED, green?" H 9991 1075 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 10000 950 50  0001 C CNN
 F 3 "~" H 10000 950 50  0001 C CNN
+F 4 "C2297" H 10000 950 50  0001 C CNN "LCSC"
 	1    10000 950 
 	1    0    0    -1  
 $EndComp
@@ -174,6 +185,7 @@ F 0 "C1" H 1742 5446 50  0000 L CNN
 F 1 "100nF" H 1742 5355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1650 5400 50  0001 C CNN
 F 3 "~" H 1650 5400 50  0001 C CNN
+F 4 "C14663" H 1650 5400 50  0001 C CNN "LCSC"
 	1    1650 5400
 	1    0    0    -1  
 $EndComp
@@ -189,6 +201,7 @@ F 0 "C2" H 1742 6046 50  0000 L CNN
 F 1 "100nF" H 1742 5955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1650 6000 50  0001 C CNN
 F 3 "~" H 1650 6000 50  0001 C CNN
+F 4 "C14663" H 1650 6000 50  0001 C CNN "LCSC"
 	1    1650 6000
 	1    0    0    -1  
 $EndComp
@@ -427,6 +440,7 @@ F 0 "C3" H 4542 1546 50  0000 L CNN
 F 1 "100nF" H 4542 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4450 1500 50  0001 C CNN
 F 3 "~" H 4450 1500 50  0001 C CNN
+F 4 "C14663" H 4450 1500 50  0001 C CNN "LCSC"
 	1    4450 1500
 	1    0    0    -1  
 $EndComp
@@ -468,6 +482,8 @@ F 0 "SW2" V 4096 1352 50  0000 R CNN
 F 1 "SW_Push" V 4005 1352 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4050 1600 50  0001 C CNN
 F 3 "" H 4050 1600 50  0001 C CNN
+F 4 "C116501" V 4050 1400 50  0001 C CNN "LCSC"
+F 5 "PCBA" V 4050 1400 50  0001 C CNN "DNP"
 	1    4050 1400
 	0    -1   -1   0   
 $EndComp
@@ -700,6 +716,7 @@ F 0 "C4" H 8842 2696 50  0000 L CNN
 F 1 "DNP/1uF" H 8842 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8750 2650 50  0001 C CNN
 F 3 "~" H 8750 2650 50  0001 C CNN
+F 4 "1" H 8750 2650 50  0001 C CNN "DNP"
 	1    8750 2650
 	-1   0    0    -1  
 $EndComp
@@ -711,6 +728,7 @@ F 0 "C7" H 9192 2696 50  0000 L CNN
 F 1 "DNP/1uF" H 9192 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9100 2650 50  0001 C CNN
 F 3 "~" H 9100 2650 50  0001 C CNN
+F 4 "1" H 9100 2650 50  0001 C CNN "DNP"
 	1    9100 2650
 	1    0    0    -1  
 $EndComp
@@ -802,6 +820,7 @@ F 0 "J1" H 7256 4778 50  0000 C CNN
 F 1 "Conn_01x11_Male" H 7256 4687 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 7150 4100 50  0001 C CNN
 F 3 "~" H 7150 4100 50  0001 C CNN
+F 4 "PCBA" H 7150 4100 50  0001 C CNN "DNP"
 	1    7150 4100
 	1    0    0    -1  
 $EndComp
@@ -813,6 +832,7 @@ F 0 "J2" H 9006 4778 50  0000 C CNN
 F 1 "Conn_01x11_Male" H 9006 4687 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 8900 4100 50  0001 C CNN
 F 3 "~" H 8900 4100 50  0001 C CNN
+F 4 "PCBA" H 8900 4100 50  0001 C CNN "DNP"
 	1    8900 4100
 	1    0    0    -1  
 $EndComp
@@ -839,6 +859,7 @@ F 0 "R6" V 1954 1650 50  0000 C CNN
 F 1 "22k" V 2045 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2150 1650 50  0001 C CNN
 F 3 "~" H 2150 1650 50  0001 C CNN
+F 4 "C31850" V 2150 1650 50  0001 C CNN "LCSC"
 	1    2150 1650
 	0    1    1    0   
 $EndComp
@@ -862,6 +883,7 @@ F 0 "R1" V 1104 2300 50  0000 C CNN
 F 1 "68" V 1195 2300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1300 2300 50  0001 C CNN
 F 3 "~" H 1300 2300 50  0001 C CNN
+F 4 "C27592" V 1300 2300 50  0001 C CNN "LCSC"
 	1    1300 2300
 	0    1    1    0   
 $EndComp
@@ -873,6 +895,7 @@ F 0 "R2" V 1104 2600 50  0000 C CNN
 F 1 "68" V 1195 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1300 2600 50  0001 C CNN
 F 3 "~" H 1300 2600 50  0001 C CNN
+F 4 "C27592" V 1300 2600 50  0001 C CNN "LCSC"
 	1    1300 2600
 	0    1    1    0   
 $EndComp
@@ -886,8 +909,9 @@ U 1 1 60B0A2B6
 P 2050 2350
 F 0 "D4" H 2050 2450 50  0000 C CNN
 F 1 "e.g. 1N4148, C917006, C708767" H 2050 2476 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 2050 2350 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2050 2350 50  0001 C CNN
 F 3 "~" H 2050 2350 50  0001 C CNN
+F 4 "C2128" H 2050 2350 50  0001 C CNN "LCSC"
 	1    2050 2350
 	1    0    0    -1  
 $EndComp
@@ -899,6 +923,7 @@ F 0 "R7" V 2204 2450 50  0000 C CNN
 F 1 "220" V 2295 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 2450 50  0001 C CNN
 F 3 "~" H 2400 2450 50  0001 C CNN
+F 4 "C22962" V 2400 2450 50  0001 C CNN "LCSC"
 	1    2400 2450
 	0    1    1    0   
 $EndComp
@@ -933,8 +958,9 @@ U 1 1 60B9DD47
 P 2050 2550
 F 0 "D5" H 2050 2650 50  0000 C CNN
 F 1 "e.g. 1N4148, C917006, C708767" H 2050 2676 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 2050 2550 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2050 2550 50  0001 C CNN
 F 3 "~" H 2050 2550 50  0001 C CNN
+F 4 "C2128" H 2050 2550 50  0001 C CNN "LCSC"
 	1    2050 2550
 	1    0    0    -1  
 $EndComp
@@ -956,6 +982,7 @@ F 0 "R8" V 2204 2950 50  0000 C CNN
 F 1 "1k" V 2295 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 2950 50  0001 C CNN
 F 3 "~" H 2400 2950 50  0001 C CNN
+F 4 "C21190" V 2400 2950 50  0001 C CNN "LCSC"
 	1    2400 2950
 	0    1    1    0   
 $EndComp
@@ -969,6 +996,7 @@ F 0 "R9" V 2204 3250 50  0000 C CNN
 F 1 "10k" V 2295 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2400 3250 50  0001 C CNN
 F 3 "~" H 2400 3250 50  0001 C CNN
+F 4 "C25804" V 2400 3250 50  0001 C CNN "LCSC"
 	1    2400 3250
 	0    1    1    0   
 $EndComp
@@ -1005,8 +1033,6 @@ F 3 "" H 2200 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 2950 2300 2950
-Text Notes 700  3600 0    50   ~ 0
-0.5V ref. voltage for ACMP\nOptions:\n1. Both resistors external\n2. Use 10k VBUS pulldown plus ext. PU\n3. Use int. PU plus ext. PD (high variation)\n4. Use int. PU and PD (high variation, 0.5V)
 $Comp
 L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 60A4E06D
@@ -1074,6 +1100,7 @@ F 0 "J3" H 5650 2300 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5650 2200 50  0000 C CNN
 F 2 "footprint:VACON_CSP_USC16_TR" H 5800 1450 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 1450 50  0001 C CNN
+F 4 "C283540" H 5650 1450 50  0001 C CNN "LCSC"
 	1    5650 1450
 	1    0    0    -1  
 $EndComp
@@ -1093,6 +1120,7 @@ F 0 "R10" V 2354 3800 50  0000 C CNN
 F 1 "1k" V 2445 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 3800 50  0001 C CNN
 F 3 "~" H 2550 3800 50  0001 C CNN
+F 4 "C21190" V 2550 3800 50  0001 C CNN "LCSC"
 	1    2550 3800
 	0    1    1    0   
 $EndComp
@@ -1104,6 +1132,7 @@ F 0 "R11" V 2354 4100 50  0000 C CNN
 F 1 "22k" V 2445 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 4100 50  0001 C CNN
 F 3 "~" H 2550 4100 50  0001 C CNN
+F 4 "C31850" V 2550 4100 50  0001 C CNN "LCSC"
 	1    2550 4100
 	0    1    1    0   
 $EndComp
@@ -1134,8 +1163,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 4100 3000 3800
 Connection ~ 3000 3800
-Text Notes 700  4150 0    50   ~ 0
-Options for measuring VBUS:\n1. Use 2.2k and 10k, measure\n  relative to VCC.\n2. Use external divider for P3.2\n  and use 1k and 2*22k here.\n  Measure relative to P3.2.
+Text Notes 600  4150 0    50   ~ 0
+Options for measuring VBUS:\n1. Use 2.2k and 10k, measure\n  relative to VCC.\n2. Use external divider for P3.2\n  and use 1k and 2*22k here.\n  Measure relative to P3.2.\n  -> 2 is not so good because\n     we always measure relative\n    to VCC so resolution suffers.
 $Comp
 L Device:R_Small R12
 U 1 1 60BB508E
@@ -1144,6 +1173,7 @@ F 0 "R12" V 2654 4100 50  0000 C CNN
 F 1 "22k" V 2745 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2850 4100 50  0001 C CNN
 F 3 "~" H 2850 4100 50  0001 C CNN
+F 4 "C31850" V 2850 4100 50  0001 C CNN "LCSC"
 	1    2850 4100
 	0    1    1    0   
 $EndComp
@@ -1179,6 +1209,7 @@ F 0 "J4" H 5650 4400 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5650 4300 50  0000 C CNN
 F 2 "footprint:VACON_CSP_USC16_TR" H 5800 3550 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 3550 50  0001 C CNN
+F 4 "C283540" H 5650 3550 50  0001 C CNN "LCSC"
 	1    5650 3550
 	1    0    0    -1  
 $EndComp
@@ -1274,4 +1305,6 @@ Wire Wire Line
 	2400 4300 2400 4100
 Connection ~ 2400 4300
 Connection ~ 2400 4100
+Text Notes 2050 -400 0    50   ~ 0
+- add "ideal diode", again (or the MOSFET that used to be there)\n- add LDO for 5V, if possible with input up to 50V (for new PD)\n=> use with DPM86xx, new PD, VBUS also connected to banana connectors
 $EndSCHEMATC
