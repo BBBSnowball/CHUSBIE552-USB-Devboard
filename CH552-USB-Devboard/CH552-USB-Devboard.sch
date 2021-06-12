@@ -108,44 +108,44 @@ Wire Wire Line
 $Comp
 L Device:R_Small R5
 U 1 1 5E920474
-P 10450 950
-F 0 "R5" V 10254 950 50  0000 C CNN
-F 1 "10k" V 10345 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10450 950 50  0001 C CNN
-F 3 "~" H 10450 950 50  0001 C CNN
-F 4 "C25804" V 10450 950 50  0001 C CNN "LCSC"
-	1    10450 950 
+P 10650 2900
+F 0 "R5" V 10454 2900 50  0000 C CNN
+F 1 "10k" V 10545 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10650 2900 50  0001 C CNN
+F 3 "~" H 10650 2900 50  0001 C CNN
+F 4 "C25804" V 10650 2900 50  0001 C CNN "LCSC"
+	1    10650 2900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5E92047B
-P 10000 950
-F 0 "D3" H 9991 1166 50  0000 C CNN
-F 1 "LED, green?" H 9991 1075 50  0000 C CNN
-F 2 "LEDs:LED_0805" H 10000 950 50  0001 C CNN
-F 3 "~" H 10000 950 50  0001 C CNN
-F 4 "C2297" H 10000 950 50  0001 C CNN "LCSC"
-	1    10000 950 
+P 10200 2900
+F 0 "D3" H 10191 3116 50  0000 C CNN
+F 1 "LED, green?" H 10191 3025 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 10200 2900 50  0001 C CNN
+F 3 "~" H 10200 2900 50  0001 C CNN
+F 4 "C2297" H 10200 2900 50  0001 C CNN "LCSC"
+	1    10200 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 950  10350 950 
+	10350 2900 10550 2900
 Wire Wire Line
-	10550 950  10800 950 
+	10750 2900 11000 2900
 Wire Wire Line
-	9850 950  9550 950 
+	10050 2900 9750 2900
 Wire Wire Line
-	9550 950  9550 1250
+	9750 2900 9750 3200
 $Comp
 L power:GND #PWR0102
 U 1 1 5E920584
-P 9550 1250
-F 0 "#PWR0102" H 9550 1000 50  0001 C CNN
-F 1 "GND" H 9555 1077 50  0000 C CNN
-F 2 "" H 9550 1250 50  0001 C CNN
-F 3 "" H 9550 1250 50  0001 C CNN
-	1    9550 1250
+P 9750 3200
+F 0 "#PWR0102" H 9750 2950 50  0001 C CNN
+F 1 "GND" H 9755 3027 50  0000 C CNN
+F 2 "" H 9750 3200 50  0001 C CNN
+F 3 "" H 9750 3200 50  0001 C CNN
+	1    9750 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -426,7 +426,7 @@ Text Notes 9800 1850 2    50   ~ 0
 RX\n\n
 Text Notes 9800 2100 2    50   ~ 0
 TX\n
-Text Notes 9750 900  2    50   ~ 0
+Text Notes 9950 2850 2    50   ~ 0
 POW\n
 Text Label 6950 1550 2    50   ~ 0
 P3.6
@@ -605,16 +605,16 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0121
 U 1 1 5EA08550
-P 10800 800
-F 0 "#PWR0121" H 10800 650 50  0001 C CNN
-F 1 "VCC" H 10817 973 50  0000 C CNN
-F 2 "" H 10800 800 50  0001 C CNN
-F 3 "" H 10800 800 50  0001 C CNN
-	1    10800 800 
+P 11000 2750
+F 0 "#PWR0121" H 11000 2600 50  0001 C CNN
+F 1 "VCC" H 11017 2923 50  0000 C CNN
+F 2 "" H 11000 2750 50  0001 C CNN
+F 3 "" H 11000 2750 50  0001 C CNN
+	1    11000 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10800 800  10800 950 
+	11000 2750 11000 2900
 Wire Wire Line
 	10850 1800 10850 2150
 Wire Wire Line
@@ -837,12 +837,12 @@ F 4 "PCBA" H 8900 4100 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP1
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 60A07638
 P 8250 1850
-F 0 "JP1" H 8250 2114 50  0000 C CNN
+F 0 "JP1" H 8250 1950 50  0000 C CNN
 F 1 "Jumper" H 8250 2023 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8250 1850 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8250 1850 50  0001 C CNN
 F 3 "~" H 8250 1850 50  0001 C CNN
 	1    8250 1850
 	1    0    0    -1  
@@ -1277,7 +1277,266 @@ Connection ~ 2400 4100
 Text Notes 2050 -400 0    50   ~ 0
 - add "ideal diode", again (or the MOSFET that used to be there)\n  - e.g. with IRF5305TRPBF but even that one can hardly work for 48V as well as 5A @ 5V\n  - Probably not needed - just don't connect banana and USB-C at the same time...\n- add LDO for 5V, if possible with input up to 50V (for new PD)\n  https://lcsc.com/product-detail/Dropout-Regulators-LDO_Texas-Instruments-TPS7A4101DGNT_C132040.html\n  https://lcsc.com/product-detail/Dropout-Regulators-LDO_Diodes-Incorporated-ZXTR2105FQ-7_C211385.html\n=> use with DPM86xx, new PD, VBUS also connected to banana connectors
 Text Notes 2650 3200 0    50   ~ 0
-0.3V (reference and\ncomparator for CC)
+0.3V (Vref and\ncomparator for CC)
 Wire Wire Line
 	2400 4100 2500 4100
+$Comp
+L CH552-USB-Devboard:TPS7A4101DGNT U?
+U 1 1 60D4C1D8
+P 8150 950
+F 0 "U?" H 8150 1315 50  0000 C CNN
+F 1 "TPS7A4101DGNT" H 8150 1224 50  0000 C CNN
+F 2 "CH552-USB-Devboard:HVSSOP-8_3.0x3.0mm_P0.65mm" H 8150 950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps7a4101.pdf?ts=1623464240651&ref_url=https%253A%252F%252Fwww.ti.com%252F" H 8150 950 50  0001 C CNN
+F 4 "C132040" H 8150 950 50  0001 C CNN "LCSC"
+	1    8150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D4FB76
+P 8050 1250
+F 0 "#PWR?" H 8050 1000 50  0001 C CNN
+F 1 "GND" H 8055 1077 50  0000 C CNN
+F 2 "" H 8050 1250 50  0001 C CNN
+F 3 "" H 8050 1250 50  0001 C CNN
+	1    8050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D52375
+P 8250 1250
+F 0 "#PWR?" H 8250 1000 50  0001 C CNN
+F 1 "GND" H 8255 1077 50  0000 C CNN
+F 2 "" H 8250 1250 50  0001 C CNN
+F 3 "" H 8250 1250 50  0001 C CNN
+	1    8250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 60D52A16
+P 7750 1050
+F 0 "#PWR?" H 7750 900 50  0001 C CNN
+F 1 "VBUS" H 7765 1223 50  0000 C CNN
+F 2 "" H 7750 1050 50  0001 C CNN
+F 3 "" H 7750 1050 50  0001 C CNN
+	1    7750 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 60D53623
+P 7450 750
+F 0 "#PWR?" H 7450 600 50  0001 C CNN
+F 1 "VBUS" H 7465 923 50  0000 C CNN
+F 2 "" H 7450 750 50  0001 C CNN
+F 3 "" H 7450 750 50  0001 C CNN
+	1    7450 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 850  7450 850 
+Wire Wire Line
+	7450 850  7450 750 
+$Comp
+L power:GND #PWR?
+U 1 1 60D5DBAE
+P 7450 1300
+F 0 "#PWR?" H 7450 1050 50  0001 C CNN
+F 1 "GND" H 7455 1127 50  0000 C CNN
+F 2 "" H 7450 1300 50  0001 C CNN
+F 3 "" H 7450 1300 50  0001 C CNN
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D5E392
+P 7450 1000
+F 0 "C?" H 7542 1046 50  0000 L CNN
+F 1 "4u7, 50V" H 7542 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7450 1000 50  0001 C CNN
+F 3 "~" H 7450 1000 50  0001 C CNN
+F 4 "C29823" H 7450 1000 50  0001 C CNN "LCSC"
+	1    7450 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 900  7450 850 
+Connection ~ 7450 850 
+$Comp
+L Device:C_Small C?
+U 1 1 60D785AE
+P 7450 1200
+F 0 "C?" H 7542 1246 50  0000 L CNN
+F 1 "4u7, 50V" H 7542 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7450 1200 50  0001 C CNN
+F 3 "~" H 7450 1200 50  0001 C CNN
+F 4 "C29823" H 7450 1200 50  0001 C CNN "LCSC"
+	1    7450 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D7B491
+P 9400 950
+F 0 "C?" H 9492 996 50  0000 L CNN
+F 1 "10uF" H 9492 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 950 50  0001 C CNN
+F 3 "~" H 9400 950 50  0001 C CNN
+F 4 "C19702" H 9400 950 50  0001 C CNN "LCSC"
+	1    9400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D813D2
+P 9000 950
+F 0 "C?" H 9092 996 50  0000 L CNN
+F 1 "100nF" H 9092 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9000 950 50  0001 C CNN
+F 3 "~" H 9000 950 50  0001 C CNN
+F 4 "C14663" H 9000 950 50  0001 C CNN "LCSC"
+	1    9000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D9BB03
+P 8650 950
+F 0 "C?" H 8742 996 50  0000 L CNN
+F 1 "10nF" H 8742 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8650 950 50  0001 C CNN
+F 3 "~" H 8650 950 50  0001 C CNN
+F 4 "C57112" H 8650 950 50  0001 C CNN "LCSC"
+	1    8650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 850  8650 850 
+Connection ~ 9400 850 
+Connection ~ 8650 850 
+Wire Wire Line
+	8650 850  9000 850 
+Connection ~ 9000 850 
+Wire Wire Line
+	9000 850  9400 850 
+Wire Wire Line
+	9400 850  9400 750 
+$Comp
+L power:VCC #PWR?
+U 1 1 60DE56D5
+P 9400 750
+F 0 "#PWR?" H 9400 600 50  0001 C CNN
+F 1 "VCC" H 9417 923 50  0000 C CNN
+F 2 "" H 9400 750 50  0001 C CNN
+F 3 "" H 9400 750 50  0001 C CNN
+	1    9400 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DE7792
+P 9000 1050
+F 0 "#PWR?" H 9000 800 50  0001 C CNN
+F 1 "GND" H 9005 877 50  0000 C CNN
+F 2 "" H 9000 1050 50  0001 C CNN
+F 3 "" H 9000 1050 50  0001 C CNN
+	1    9000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DE7DCD
+P 9400 1050
+F 0 "#PWR?" H 9400 800 50  0001 C CNN
+F 1 "GND" H 9405 877 50  0000 C CNN
+F 2 "" H 9400 1050 50  0001 C CNN
+F 3 "" H 9400 1050 50  0001 C CNN
+	1    9400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60DE8346
+P 9750 950
+F 0 "R?" V 9554 950 50  0000 C CNN
+F 1 "62k" V 9645 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9750 950 50  0001 C CNN
+F 3 "~" H 9750 950 50  0001 C CNN
+F 4 "C23221" V 9750 950 50  0001 C CNN "LCSC"
+	1    9750 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60DE8FF5
+P 9750 1250
+F 0 "R?" V 9554 1250 50  0000 C CNN
+F 1 "22k" V 9645 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9750 1250 50  0001 C CNN
+F 3 "~" H 9750 1250 50  0001 C CNN
+F 4 "C31850" V 9750 1250 50  0001 C CNN "LCSC"
+	1    9750 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DE9689
+P 9750 1350
+F 0 "#PWR?" H 9750 1100 50  0001 C CNN
+F 1 "GND" H 9755 1177 50  0000 C CNN
+F 2 "" H 9750 1350 50  0001 C CNN
+F 3 "" H 9750 1350 50  0001 C CNN
+	1    9750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1050 8650 1050
+Wire Wire Line
+	8750 1050 8750 1300
+Wire Wire Line
+	8750 1300 9550 1300
+Wire Wire Line
+	9550 1300 9550 1100
+Wire Wire Line
+	9550 1100 9750 1100
+Wire Wire Line
+	9750 1100 9750 1050
+Connection ~ 8650 1050
+Wire Wire Line
+	8650 1050 8750 1050
+Wire Wire Line
+	9750 1150 9750 1100
+Connection ~ 9750 1100
+Wire Wire Line
+	9750 850  9400 850 
+Text Notes 10200 900  0    50   ~ 0
+Vref=1.173\n(Vout=4.8V with 68k)\nVout=4.5V with 62k\nIout=23mA -> 1W,\n  -> 70°C over ambient
+$Comp
+L Device:R_Small R?
+U 1 1 60E7CBB2
+P 10050 950
+F 0 "R?" V 9854 950 50  0000 C CNN
+F 1 "DNP / 68k" V 9945 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10050 950 50  0001 C CNN
+F 3 "~" H 10050 950 50  0001 C CNN
+F 4 "C23231" V 10050 950 50  0001 C CNN "LCSC"
+F 5 "1" V 10050 950 50  0001 C CNN "DNP"
+	1    10050 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 1100 10050 1100
+Wire Wire Line
+	10050 1100 10050 1050
+Wire Wire Line
+	10050 850  9750 850 
+Connection ~ 9750 850 
+Text Notes 10200 1300 0    50   ~ 0
+11 mA for MCU plus CC\ncurrent (17 mA but not\ncontinuous)
+Text Notes 750  3000 0    50   ~ 0
+CC RX: ACMP P1.4/5 to 0.3V on P3.2\nCC TX 0: drive 0 on P1.4/5\nCC TX 1: drive P1.4/5 to GND\n  and P3.2 to high
 $EndSCHEMATC
