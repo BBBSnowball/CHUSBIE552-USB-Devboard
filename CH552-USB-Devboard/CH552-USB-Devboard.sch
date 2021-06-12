@@ -1100,7 +1100,8 @@ F 0 "J3" H 5650 2300 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5650 2200 50  0000 C CNN
 F 2 "footprint:VACON_CSP_USC16_TR" H 5800 1450 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 1450 50  0001 C CNN
-F 4 "C283540" H 5650 1450 50  0001 C CNN "LCSC"
+F 4 "C165948" H 5650 1450 50  0001 C CNN "LCSC"
+F 5 "PCBA" H 5650 1450 50  0001 C CNN "DNP"
 	1    5650 1450
 	1    0    0    -1  
 $EndComp
@@ -1109,31 +1110,19 @@ Wire Wire Line
 Wire Wire Line
 	6350 750  6350 850 
 Wire Wire Line
-	3000 3800 3200 3800
-Text Label 3200 3800 2    50   ~ 0
+	2800 3800 3000 3800
+Text Label 3000 3800 2    50   ~ 0
 P1.1
 $Comp
 L Device:R_Small R10
 U 1 1 60B6EE8A
-P 2550 3800
-F 0 "R10" V 2354 3800 50  0000 C CNN
-F 1 "1k" V 2445 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 3800 50  0001 C CNN
-F 3 "~" H 2550 3800 50  0001 C CNN
-F 4 "C21190" V 2550 3800 50  0001 C CNN "LCSC"
-	1    2550 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 60B79ACF
-P 2550 4100
-F 0 "R11" V 2354 4100 50  0000 C CNN
-F 1 "22k" V 2445 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 4100 50  0001 C CNN
-F 3 "~" H 2550 4100 50  0001 C CNN
-F 4 "C31850" V 2550 4100 50  0001 C CNN "LCSC"
-	1    2550 4100
+P 2600 3800
+F 0 "R10" V 2404 3800 50  0000 C CNN
+F 1 "1k" V 2495 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2600 3800 50  0001 C CNN
+F 3 "~" H 2600 3800 50  0001 C CNN
+F 4 "C21190" V 2600 3800 50  0001 C CNN "LCSC"
+	1    2600 3800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1159,48 +1148,28 @@ F 3 "" H 2100 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2450 3800 2350 3800
+	2500 3800 2350 3800
 Wire Wire Line
-	3000 4100 3000 3800
-Connection ~ 3000 3800
-Text Notes 600  4150 0    50   ~ 0
-Options for measuring VBUS:\n1. Use 2.2k and 10k, measure\n  relative to VCC.\n2. Use external divider for P3.2\n  and use 1k and 2*22k here.\n  Measure relative to P3.2.\n  -> 2 is not so good because\n     we always measure relative\n    to VCC so resolution suffers.
+	2800 4100 2800 3800
+Connection ~ 2800 3800
+Text Notes 2850 4050 0    50   ~ 0
+measure VBUS\nup to 55V
 $Comp
 L Device:R_Small R12
 U 1 1 60BB508E
-P 2850 4100
-F 0 "R12" V 2654 4100 50  0000 C CNN
-F 1 "22k" V 2745 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2850 4100 50  0001 C CNN
-F 3 "~" H 2850 4100 50  0001 C CNN
-F 4 "C31850" V 2850 4100 50  0001 C CNN "LCSC"
-	1    2850 4100
+P 2600 4100
+F 0 "R12" V 2404 4100 50  0000 C CNN
+F 1 "10k" V 2495 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2600 4100 50  0001 C CNN
+F 3 "~" H 2600 4100 50  0001 C CNN
+F 4 "C25804" V 2600 4100 50  0001 C CNN "LCSC"
+	1    2600 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2650 3800 3000 3800
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 60BC9416
-P 2550 4300
-F 0 "JP4" H 2550 4400 50  0000 C CNN
-F 1 "Jumper" H 2550 4473 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 4300 50  0001 C CNN
-F 3 "~" H 2550 4300 50  0001 C CNN
-	1    2550 4300
-	1    0    0    -1  
-$EndComp
+	2700 3800 2800 3800
 Wire Wire Line
-	2950 4100 3000 4100
-Wire Wire Line
-	2700 4300 2700 4100
-Wire Wire Line
-	2700 4100 2650 4100
-Wire Wire Line
-	2700 4100 2750 4100
-Connection ~ 2700 4100
-Wire Wire Line
-	2400 4100 2450 4100
+	2700 4100 2800 4100
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J4
 U 1 1 60C8CB0D
@@ -1209,7 +1178,8 @@ F 0 "J4" H 5650 4400 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5650 4300 50  0000 C CNN
 F 2 "footprint:VACON_CSP_USC16_TR" H 5800 3550 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 3550 50  0001 C CNN
-F 4 "C283540" H 5650 3550 50  0001 C CNN "LCSC"
+F 4 "C165948" H 5650 3550 50  0001 C CNN "LCSC"
+F 5 "PCBA" H 5650 3550 50  0001 C CNN "DNP"
 	1    5650 3550
 	1    0    0    -1  
 $EndComp
@@ -1303,8 +1273,11 @@ Wire Wire Line
 	2050 4300 2100 4300
 Wire Wire Line
 	2400 4300 2400 4100
-Connection ~ 2400 4300
 Connection ~ 2400 4100
 Text Notes 2050 -400 0    50   ~ 0
-- add "ideal diode", again (or the MOSFET that used to be there)\n- add LDO for 5V, if possible with input up to 50V (for new PD)\n=> use with DPM86xx, new PD, VBUS also connected to banana connectors
+- add "ideal diode", again (or the MOSFET that used to be there)\n  - e.g. with IRF5305TRPBF but even that one can hardly work for 48V as well as 5A @ 5V\n  - Probably not needed - just don't connect banana and USB-C at the same time...\n- add LDO for 5V, if possible with input up to 50V (for new PD)\n  https://lcsc.com/product-detail/Dropout-Regulators-LDO_Texas-Instruments-TPS7A4101DGNT_C132040.html\n  https://lcsc.com/product-detail/Dropout-Regulators-LDO_Diodes-Incorporated-ZXTR2105FQ-7_C211385.html\n=> use with DPM86xx, new PD, VBUS also connected to banana connectors
+Text Notes 2650 3200 0    50   ~ 0
+0.3V (reference and\ncomparator for CC)
+Wire Wire Line
+	2400 4100 2500 4100
 $EndSCHEMATC
