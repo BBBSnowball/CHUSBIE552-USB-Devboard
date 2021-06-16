@@ -1282,18 +1282,6 @@ Text Notes 2650 3200 0    50   ~ 0
 Wire Wire Line
 	2400 4100 2500 4100
 $Comp
-L CH552-USB-Devboard:TPS7A4101DGNT U3
-U 1 1 60D4C1D8
-P 8150 950
-F 0 "U3" H 8150 1315 50  0000 C CNN
-F 1 "TPS7A4101DGNT" H 8150 1224 50  0000 C CNN
-F 2 "CH552-USB-Devboard:HVSSOP-8_3.0x3.0mm_P0.65mm" H 8150 950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tps7a4101.pdf?ts=1623464240651&ref_url=https%253A%252F%252Fwww.ti.com%252F" H 8150 950 50  0001 C CNN
-F 4 "C132040" H 8150 950 50  0001 C CNN "LCSC"
-	1    8150 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0132
 U 1 1 60D4FB76
 P 8050 1250
@@ -1540,4 +1528,16 @@ Text Notes 10200 1300 0    50   ~ 0
 11 mA for MCU plus CC\ncurrent (17 mA but not\ncontinuous)
 Text Notes 750  3000 0    50   ~ 0
 CC RX: ACMP P1.4/5 to 0.3V on P3.2\nCC TX 0: drive 0 on P1.4/5\nCC TX 1: drive P1.4/5 to GND\n  and P3.2 to high
+$Comp
+L CH552-USB-Devboard:TPS7A4101DGNT U3
+U 1 1 60CD711F
+P 8150 950
+F 0 "U3" H 8150 1315 50  0000 C CNN
+F 1 "TPS7A4101DGNT" H 8150 1224 50  0000 C CNN
+F 2 "CH552-USB-Devboard:HVSSOP-8_3.0x3.0mm_P0.65mm" H 8150 950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps7a4101.pdf?ts=1623464240651&ref_url=https%253A%252F%252Fwww.ti.com%252F" H 8150 950 50  0001 C CNN
+F 4 "C132040" H 8150 950 50  0001 C CNN "LCSC"
+	1    8150 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
