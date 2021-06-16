@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ArtandSilks)(type KiCad)(uri ${KIPRJMOD}/ArtandSilks)(options "")(descr ""))
+  (lib (name CH552-USB-Devboard)(type KiCad)(uri ${KIPRJMOD}/CH552-USB-Devboard.pretty)(options "")(descr ""))
+)
