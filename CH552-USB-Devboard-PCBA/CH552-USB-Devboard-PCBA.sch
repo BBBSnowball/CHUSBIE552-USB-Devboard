@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CH552-USB-Devboard-PCBA-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -992,9 +993,9 @@ U 1 1 60C8CB0D
 P 5650 3550
 F 0 "J4" H 5650 4400 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5650 4300 50  0000 C CNN
-F 2 "footprint:VACON_CSP_USC16_TR" H 5800 3550 50  0001 C CNN
+F 2 "CH552-USB-Devboard:Korean-Hroparts-Elec-TYPE-C-31-M-17" H 5800 3550 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 3550 50  0001 C CNN
-F 4 "C165948" H 5650 3550 50  0001 C CNN "LCSC"
+F 4 "C283540" H 5650 3550 50  0001 C CNN "LCSC"
 F 5 "PCBA" H 5650 3550 50  0001 C CNN "DNP"
 	1    5650 3550
 	1    0    0    -1  
@@ -1319,26 +1320,6 @@ Wire Wire Line
 	9750 850  9400 850 
 Text Notes 10200 900  0    50   ~ 0
 Vref=1.173\n(Vout=4.8V with 68k)\nVout=4.5V with 62k\nIout=23mA -> 1W,\n  -> 70°C over ambient
-$Comp
-L Device:R_Small R14
-U 1 1 60E7CBB2
-P 10050 950
-F 0 "R14" V 9854 950 50  0000 C CNN
-F 1 "DNP / 68k" V 9945 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10050 950 50  0001 C CNN
-F 3 "~" H 10050 950 50  0001 C CNN
-F 4 "C23231" V 10050 950 50  0001 C CNN "LCSC"
-F 5 "1" V 10050 950 50  0001 C CNN "DNP"
-	1    10050 950 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9750 1100 10050 1100
-Wire Wire Line
-	10050 1100 10050 1050
-Wire Wire Line
-	10050 850  9750 850 
-Connection ~ 9750 850 
 Text Notes 10200 1300 0    50   ~ 0
 11 mA for MCU plus CC\ncurrent (17 mA but not\ncontinuous)
 Text Notes 750  3000 0    50   ~ 0
@@ -1353,6 +1334,74 @@ F 2 "CH552-USB-Devboard:HVSSOP-8_3.0x3.0mm_P0.65mm" H 8150 950 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps7a4101.pdf?ts=1623464240651&ref_url=https%253A%252F%252Fwww.ti.com%252F" H 8150 950 50  0001 C CNN
 F 4 "C132040" H 8150 950 50  0001 C CNN "LCSC"
 	1    8150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60D50D65
+P 5900 5600
+F 0 "C2" H 5992 5646 50  0000 L CNN
+F 1 "100nF" H 5992 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5900 5600 50  0001 C CNN
+F 3 "~" H 5900 5600 50  0001 C CNN
+F 4 "C14663" H 5900 5600 50  0001 C CNN "LCSC"
+	1    5900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D51335
+P 5900 5700
+F 0 "#PWR?" H 5900 5450 50  0001 C CNN
+F 1 "GND" H 5905 5527 50  0000 C CNN
+F 2 "" H 5900 5700 50  0001 C CNN
+F 3 "" H 5900 5700 50  0001 C CNN
+	1    5900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60D515E1
+P 5900 5500
+F 0 "#PWR?" H 5900 5350 50  0001 C CNN
+F 1 "+3V3" H 5915 5673 50  0000 C CNN
+F 2 "" H 5900 5500 50  0001 C CNN
+F 3 "" H 5900 5500 50  0001 C CNN
+	1    5900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 60D51BC0
+P 5500 5600
+F 0 "C1" H 5592 5646 50  0000 L CNN
+F 1 "100nF" H 5592 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 5600 50  0001 C CNN
+F 3 "~" H 5500 5600 50  0001 C CNN
+F 4 "C14663" H 5500 5600 50  0001 C CNN "LCSC"
+	1    5500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D51BCA
+P 5500 5700
+F 0 "#PWR?" H 5500 5450 50  0001 C CNN
+F 1 "GND" H 5505 5527 50  0000 C CNN
+F 2 "" H 5500 5700 50  0001 C CNN
+F 3 "" H 5500 5700 50  0001 C CNN
+	1    5500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60D5A817
+P 5500 5500
+F 0 "#PWR?" H 5500 5350 50  0001 C CNN
+F 1 "VCC" H 5517 5673 50  0000 C CNN
+F 2 "" H 5500 5500 50  0001 C CNN
+F 3 "" H 5500 5500 50  0001 C CNN
+	1    5500 5500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
